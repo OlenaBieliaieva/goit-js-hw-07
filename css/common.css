@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+/* -------------------- 1 ------------------------ */
+ul,
+li {
+  list-style: none;
+}
+#categories {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.item {
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+}
+h2 {
+  padding-left: 16px;
+  margin: 0;
+}
+.item > ul {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.item > ul > li {
+  width: 360px;
+  padding: 8px 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+}
+/* ----------------------------------------------- */
+/* -------------------- 2 ------------------------ */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+  margin: 100px 156px;
+  padding: 0;
+  justify-content: center;
+}
+
+.gallery > li {
+  position: relative;
+  display: inline-block;
+  width: 360px;
+  height: 300px;
+}
+
+img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* ----------------------------------------------- */
+/* -------------------- 3 ------------------------ */
+input[type="text"] {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+}
+input[type="text"]::placeholder {
+  color: #2e2f42;
+}
+h1 {
+  margin: 0;
+}
+/* ----------------------------------------------- */
+/* -------------------- 4 ------------------------ */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+label {
+  display: block;
+}
+button[type="submit"] {
+  width: 86px;
+  height: 40px;
+  border-radius: 8px;
+  background: #4e75ff;
+  border: none;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 16px;
+}
+button[type="submit"]:hover {
+  background: #6c8cff;
+}
+input[type="email"],
+input[type="password"] {
+  display: block;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  width: 360px;
+  height: 40px;
+  padding: 8px 16px;
+  margin-top: 8px;
+  outline: none;
+}
+input[type="email"],
+input[type="password"]:active {
+  border: 1px solid #000000;
+}
+input[type="email"],
+input[type="password"]:hover {
+  border: 1px solid #000000;
+}
+/* ----------------------------------------------- */
+/* -------------------- 5 ------------------------ */
+.widget {
+  display: flex;
+  flex-direction: column;
+}
+.change-color {
+  border-radius: 8px;
+  outline: none;
+  background-color: #4e75ff;
+  width: 148px;
+  height: 40px;
+  color: #ffffff;
+  border: none;
+}
+/* ----------------------------------------------- */
+/* -------------------- 6 ------------------------ */
+div#controls {
+  display: flex;
+  gap: 16px;
+  background-color: #f6f6fe;
+  padding: 32px;
+  width: 486px;
+  border-radius: 8px;
+}
+input[type="number"] {
+  width: 150px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #808080;
+  padding: 8px 16px;
+}
+button[data-create] {
+  border-radius: 8px;
+  background: #4e75ff;
+  width: 120px;
+  padding: 8px 16px;
+  color: #ffffff;
+  outline: none;
+  border: none;
+}
+button[data-destroy] {
+  border-radius: 8px;
+  background: #ff4e4e;
+  width: 120px;
+  padding: 8px 16px;
+  color: #ffffff;
+  outline: none;
+  border: none;
+}
+button[data-destroy]:hover {
+  background: #ff7070;
+}
+div#controls {
+  background-color: #f6f6fe;
+  padding: 32px;
+  width: 486px;
+  border-radius: 8px;
+}
+/* ----------------------------------------------- */
